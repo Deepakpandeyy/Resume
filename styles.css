@@ -129,6 +129,9 @@ footer {
     text-align: center;
 }
 
+ th, td {
+  border-color: #96D4D4;
+}
 #personal-details h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
