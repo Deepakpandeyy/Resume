@@ -210,3 +210,27 @@ footer p {
     width: 100%; /* Adjust image size according to your needs */
     display: block;
 }
+/* Container for the video */
+.video-container {
+    max-width: 100%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center; 
+}
+
+/* Video styles */
+.video-player {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    max-height: 80vh; 
+}
+
+/* For screens smaller than 600px (Mobile devices) */
+@media screen and (max-width: 600px) {
+    .video-player {
+        width: 100%;
+        max-height: 60vh; 
+    }
+}
+
