@@ -1,0 +1,121 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<!-- Header Section -->
+      <header>
+        <div class="container">
+            <h1>Deepak Pandey</h1>
+            <p class="professional-title">Software Engineer | Unity Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">About</a></li>
+                    <li><a href="Index.html">Personal Details</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+
+           <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Project : Plain Shooter Game</h3>
+                <div class="project-content">
+                    <div class="video-container">     
+                                                                
+                        <video class="video-player" id="video-2" width="560" height="315" controls>
+                            <source src="ProjectVideos/Plain Shooter.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div><hr>
+                    
+                </div>
+                <p><h3>Description</h3><hr>
+                    In this project, I have created a simple but engaging 2D 
+                    shooter game in which the player has to shoot enemy targets. 
+                    The game has basic shooting mechanics, anime AI, and score tracking
+                     features. Using the Unity engine, I have optimized the game and
+                      implemented user-friendly controls.</p>
+                      <h3>Features:</h3>
+
+                        <h4>Basic Shooting Mechanism:</h4>
+                         The player has to target and shoot the animes with the mouse and keyboard.
+                       <h4>Anime Eye:</h4> Anime makes random movements and challenges the player.
+                        <h4>Scoring System:</h4> Every anime kills earns points and the high score tracking system is implemented.
+                       <h4>Minimalist Design:</h4> Simple graphics and clear UI design that puts the focus on gameplay.
+            </div>
+            <div>
+                <h3>Technologies Used:</h3>
+<ul>
+<li>Unity 2D  </li>
+<li>C# for gameplay scripting  </li>
+<li>Basic AI techniques for enemy movement  </li>
+<li>Particle effects for shooting and explosions  </li>
+</ul>                 
+            </div>
+
+<div>
+<h3>  Challenge Faced & Solutions</h3>
+<h4>Challenge:</h4> Making the movement of anime AI random and engaging.
+<h4>Solution:</h4> Finally tuned pathfinding algorithm and random movement patterns that make the gameplay unpredictable and interesting.
+ </div>
+ <div>
+    <h3>Learning & Outcome:</h3>
+        From this project, I understood Unity 2D development and game mechanics deeply.
+         This game is a strong addition to my portfolio that showcases 
+         my problem-solving skills, creativity, and coding capabilities.
+ </div>
+
+       
+
+        </div>
+    </section>
+
+    <div class="source-code">
+        <h4>Game Code Snippet:</h4>
+        <pre><code>
+// Unity C# script for player movement
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+public float moveSpeed = 5f;
+
+void Update()
+{
+float horizontal = Input.GetAxis("Horizontal");
+float vertical = Input.GetAxis("Vertical");
+Vector3 movement = new Vector3(horizontal, 0, vertical) * moveSpeed * Time.deltaTime;
+transform.Translate(movement);
+}
+}
+        </code></pre>
+
+        <p>To view the full source code, visit my GitHub repository:</p>
+        <a href="https://github.com/yourusername/game-project-repository" target="_blank" class="github-link">View Source Code on GitHub</a>
+    </div>
+</div>
+</div>
+
+<!-- Other projects go here... -->
+</div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Deepak Pandey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Port.js"></script>
+</body>
+</html>
+

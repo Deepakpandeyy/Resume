@@ -1,0 +1,124 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<!-- Header Section -->
+      <header>
+        <div class="container">
+            <h1>Deepak Pandey</h1>
+            <p class="professional-title">Software Engineer | Unity Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">About</a></li>
+                    <li><a href="Index.html">Personal Details</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+
+           <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            
+           
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Project : Tic Tac Toe Game</h3>
+                <div class="project-content">
+                    <div class="video-container">
+                        <video width="560" height="315" controls>
+                            <source src="ProjectVideos/TicTacToe.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <hr>
+                </div>
+                <p><h3>Description</h3><hr>
+                    In this project, I developed a classic 2D Tic Tac Toe game offering
+                     a simple and intuitive gameplay experience. The game is built using 
+                     Unity, where players can select X or O and make their moves. 
+                     The game also includes an AI opponent for single-player mode,
+                      allowing players to test their skills.</p>
+                      <h3>Features:</h3>
+
+                        <h4>Multiplayer Mode</h4>
+                        Two players can play the game on a single device.
+                       <h4>Grid System:</h4> A 3x3 grid where players place their moves, providing an intuitive and clear interface.
+                        <h4>Victory Detection:</h4> The game automatically detects if a player has aligned three X's or O's horizontally, vertically, or diagonally.
+                       <h4>Reset Game Option:</h4> After a game, players can reset and start a new round.
+                       <h4>Simple UI: </h4> Clean and minimalistic interface that makes it easy to understand the game rules.
+            </div>
+            <div>
+                <h3>Technologies Used:</h3>
+<ul>
+<li>Unity (for game engine)</li>
+<li>C# for gameplay scripting  </li>
+<li>2D graphics for game elements (Grid, X and O icons)</li>
+
+</ul>                 
+            </div>
+
+<div>
+<h3>  Challenge Faced & Solutions</h3>
+<h4>Challenge:</h4>  Implementing victory conditions and making the AI opponent challenging.
+<h4>Solution:</h4> Used efficient algorithms to check all rows, columns, and diagonals for a win,
+    and implemented simple logic and randomization to make the AI opponent challenging.
+ </div>
+ <div>
+    <h3>Learning & Outcome:</h3>
+    This project allowed me to gain a solid understanding of game logic,
+     and 2D gameplay development in Unity. It is a great addition to my portfolio, showcasing my logical thinking,
+     problem-solving skills, and ability to design and develop engaging games.
+ </div>
+
+       
+
+        </div>
+    </section>
+
+    <div class="source-code">
+        <h4>Game Code Snippet:</h4>
+        <pre><code>
+// Unity C# script for player movement
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+public float moveSpeed = 5f;
+
+void Update()
+{
+float horizontal = Input.GetAxis("Horizontal");
+float vertical = Input.GetAxis("Vertical");
+Vector3 movement = new Vector3(horizontal, 0, vertical) * moveSpeed * Time.deltaTime;
+transform.Translate(movement);
+}
+}
+ </code></pre>
+
+        <p>To view the full source code, visit my GitHub repository:</p>
+        <a href="https://github.com/yourusername/game-project-repository" target="_blank" class="github-link">View Source Code on GitHub</a>
+    </div>
+</div>
+</div>
+
+<!-- Other projects go here... -->
+</div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Deepak Pandey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Port.js"></script>
+</body>
+</html>
+
+

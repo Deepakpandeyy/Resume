@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
             image: 'ProjectImages/Plain2.PNG'
         },
     ];
+    // Port.js: Dynamically update the year in the footer
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
 
     function createProjectElement(project) {
         const projectElement = document.createElement('div');

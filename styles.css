@@ -1,184 +1,212 @@
-/* Reset some default styles */
-* {
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
-    background-size: cover;
-    background-position: center;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
 .container {
     width: 80%;
-    margin: auto;
-    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+/* Header Section */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0074d9 3px solid;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    float: left;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.professional-title {
+    font-size: 1.2rem;
+    font-weight: normal;
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 2.5em;
 }
 
-header nav {
-    float: right;
-    margin-top: 20px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
+nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+    font-size: 1.1rem;
 }
 
-header nav ul li a:hover {
-    color: #0074d9;
-}
-
+/* About Me Section */
 #about {
-    padding: 50px 0;
-    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #about h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
+    margin-bottom: 15px;
 }
 
+/* Personal Details Section */
+#personal-details {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#personal-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#personal-details table, th, td {
+    border: 1px solid #ddd;
+}
+
+#personal-details th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+
+#personal-details td {
+    padding: 10px;
+}
+
+#personal-details a {
+    color: #333;
+    text-decoration: none;
+}
+
+#personal-details a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section */
 #projects {
-    padding: 50px 0;
-    text-align: center;
-}
-
-#projects h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-5px);
+    margin-bottom: 20px;
 }
 
 .project h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.project p {
-    font-size: 1.1em;
-    color: #555;
-    display: none; /* Hide project description by default */
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.project.expanded {
-    max-height: 200px; /* Adjust as needed */
-}
-
-.project.expanded p {
-    display: block;
-}
-
-footer {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-#personal-details {
-    padding: 50px 0;
-    text-align: center;
-}
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
-#personal-details h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-}
-
-#personal-details p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}.project {
-    background: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.project img {
+.project-img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.project h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 200px; /* You can adjust this size */
 }
 
 .project p {
-    font-size: 1.1em;
-    color: #555;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-.project.expanded p {
-    max-height: 200px; /* Adjust as necessary */
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+/* Source Code Styling */
+.source-code {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.source-code h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.source-code pre {
+    background-color: #2d2d2d;
+    color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.github-link {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+.image-container {
+    display: inline-block;
+    border: 2px solid transparent; /* Initial border */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.image-container:hover {
+    border-color: #3498db; /* Border color on hover */
+}
+
+.image-container img {
+    width: 100%; /* Adjust image size according to your needs */
+    display: block;
 }
